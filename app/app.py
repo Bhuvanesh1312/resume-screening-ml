@@ -1,10 +1,5 @@
 import streamlit as st
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from scripts.predict import predict_role
+from predict import predict_role  # ✅ simple import now
 
 st.set_page_config(page_title="Resume Screening", layout="centered")
 st.title("📄 Resume Screening System using ML")
