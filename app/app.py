@@ -1,8 +1,10 @@
-import streamlit as st
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from scripts.predict import predict_role
 
 st.set_page_config(page_title="Resume Screening", layout="centered")
-
 st.title("📄 Resume Screening System using ML")
 st.write("Upload a resume in PDF format and get the predicted job role.")
 
